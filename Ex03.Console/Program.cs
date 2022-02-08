@@ -35,16 +35,14 @@ namespace Ex03.Console
             }
 
             //somar multiplos
-            for (int i = 0; i < multiplos.Length; i++)
+            for (int j = 0; j < multiplos.Length -1; j++)
             {
-                for (int j = i+1; j < multiplos.Length; j++)
-                {
-                    soma = multiplos[i] + multiplos[j] + soma;
-                }
+                soma += multiplos[j];
             }
+            
 
             //exibir soma
-            System.Console.WriteLine("A soma entre os impare é: " + soma);
+            System.Console.WriteLine("A soma entre os impares é: " + soma);
             
      
             System.Console.ReadKey();
